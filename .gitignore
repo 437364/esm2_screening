@@ -1,0 +1,11 @@
+apart-research-leaf.manufacturer.cert
+designed_toxins (1).fasta
+designed_toxins (2).fasta
+designed_toxins (3).fasta
+designed_toxins.fasta
+identity_scale_toxin_batch.fasta
+random_15_toxin_batch (1).fasta
+random_15_toxin_batch.fasta
+.vscode/settings.json
+embeddings/neutral_embeddings_large.npz
+embeddings/toxin_embeddings_large.npz

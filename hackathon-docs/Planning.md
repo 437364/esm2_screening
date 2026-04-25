@@ -18,22 +18,18 @@ Code Repository: [https://github.com/kudosscience/aixbio-apart-hackathon](https:
 
 * **select which 3D structures to modify. We can only cover about 500, because ProteinMPNN eats a lot of compute.**
 
-Possible approaches:
+Selected approach:
 
-- run a set of 15 random modified dangerous proteins, 8 variants each, through SecureDNA. See if it fails to spot danger. Repeat. Search for a pattern. Once the pattern is found, select 500 proteins based on this pattern.  
-- ?
-
-Probably not:
-
-- top 500 most popular toxins/virulence factors. SecureDNA are probably not idiots, and they’ve probably already protected themselves against every possible modification of popular dangers.
-
+- **"Scale-Down Identity" Approach (Option C):** Take highly dangerous proteins and use ProteinMPNN with different sampling temperatures to generate specific variants at varying sequence identities (e.g., 90%, 80%, 60%, 40%, 20%). Map the exact sequence identity threshold where SecureDNA fails, and show that ESM2 can still consistently detect the threat all the way down to low identity. We can produce a line graph showing SecureDNA detection dropping to 0% while ESM2 detection stays resilient.
 
 2. ### Trick SecureDNA into flagging them as safe
 
 We currently have a placeholder instead of SecureDNA API call. Someone has to write the actual thing.  
 **TODO:**
 
-* **Write a function that accepts amino acid sequence as an input, transforms it into DNA sequence, sends to SecureDNA screening and outputs the result.**  
+* **Write a function that accepts amino acid sequence as an input, transforms it into DNA sequence, sends to SecureDNA screening and outputs the result.**
+  * aminoacid -> DNA backtranslation in real-world protein expression scenarios is usually done by tools that take codon optimization into account, so the function should ideally select an expression organism (at random?) - the approach with the simple codon table used currently works great if you are later translating to amino acids again, but might throw off DNA-based similarity searches (secureDNA is one I think?). It could increase false negatives for secureDNA compared to our layer, but only because our test cases are not faithful to a real-world scenario. I have no idea about the magnitude of this effect.
+
 * **Time this function. Maybe screening will become a bottleneck.**
 
 
