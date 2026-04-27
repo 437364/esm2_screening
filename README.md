@@ -12,8 +12,11 @@ Current DNA synthesis screening systems rely primarily on sequence homology to d
 
 ## 👥 Authors
 Polina Shevyakova - https://github.com/PolinaSh-main
+
 Henry Ward - https://github.com/kudosscience
+
 Elina Shaniiazova -
+
 Marie Kratka - https://github.com/437364
 
 ## 📁 Repository Structure
