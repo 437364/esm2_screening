@@ -25,7 +25,7 @@ esm2_screening/
 
 ### 1. Main Screening Pipeline (`Biosecurity_Hackathon_Clean_Main_Pipeline.ipynb`)
 
-**Main Author:** [MAIN NOTEBOOK AUTHOR NAME - Primary contributor to the main screening pipeline]
+**Main Author:** [Polina Shevyakova (https://github.com/PolinaSh-main) - Primary contributor to the main screening pipeline]
 
 A comprehensive biosecurity screening system with two complementary layers:
 
@@ -48,7 +48,7 @@ A comprehensive biosecurity screening system with two complementary layers:
 
 ### 2. Variant Generation (`ProteinMPNN.ipynb`)
 
-**Author:** [PROTEINMPNN NOTEBOOK AUTHOR - Primary contributor to protein variant generation]
+**Author:** [Henry Ward (https://github.com/kudosscience) - Primary contributor to protein variant generation]
 
 Generates sequence-diverse toxin variants while preserving 3D structure:
 
@@ -59,7 +59,7 @@ Generates sequence-diverse toxin variants while preserving 3D structure:
 
 ### 3. Fragment Analysis (`handle_fragments.ipynb`)
 
-**Author:** [FRAGMENT ANALYSIS AUTHOR - Primary contributor to multiple ORF detection and DNA fragment processing]
+**Author:** [Marie Kratka - Primary contributor to multiple ORF detection and DNA fragment processing]
 
 Handles complex DNA constructs with multiple coding regions:
 
@@ -70,7 +70,7 @@ Handles complex DNA constructs with multiple coding regions:
 
 ### 4. Embedding Analysis (`check_embeddings_database.ipynb`)
 
-**Author:** [EMBEDDINGS ANALYSIS AUTHOR - Primary contributor to database validation and embedding space visualization]
+**Author:** [Marie Kratka - Primary contributor to database validation and embedding space visualization]
 
 Visualizes and analyzes protein embedding space:
 
