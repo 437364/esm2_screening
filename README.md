@@ -10,6 +10,12 @@ Current DNA synthesis screening systems rely primarily on sequence homology to d
 2. **Functional relationships are more conserved in embedding space than sequence space**
 3. **Multi-modal screening approaches** could provide more robust biosecurity coverage against advanced evasion attempts
 
+## 👥 Authors
+Polina Shevyakova - https://github.com/PolinaSh-main
+Henry Ward - https://github.com/kudosscience
+Elina Shaniiazova -
+Marie Kratka - https://github.com/437364
+
 ## 📁 Repository Structure
 
 ```
